@@ -1,0 +1,47 @@
+.row {
+  justify-content: center;
+}
+
+newspiece {
+  position: relative;
+  margin-bottom: 2rem;
+  /* filter: drop-shadow(0 1px 1px rgba(0,0,0,.25)); */
+  cursor: pointer;
+  margin: 1rem;
+}
+newspiece:hover {
+  filter: drop-shadow(0 4px 4px rgb(252, 113, 0));
+}
+
+newspiece > img {
+  width: 33vw;
+height: 19rem;
+object-fit: cover;
+border-radius: 2em;
+}
+
+.title {
+    
+  margin-bottom: 5rem;
+}
+
+.txtContain {
+  color: white;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+}
+.txtContain > h3 {
+  font-size: 1.7em;
+  max-width: 14em;
+  
+}
+.txtContain > h3:hover {
+    text-shadow: 0 0 1px rgb(252, 113, 0), 0 0 1px rgb(252, 113, 0), 0 0 1px rgb(252, 113, 0), 0 0 1px rgb(252, 113, 0), 0 0 1px rgb(252, 113, 0), 0 0 1px rgb(252, 113, 0), 0 0 1px rgb(252, 113, 0), 0 0 1px rgb(252, 113, 0), 0 0 1px rgb(252, 113, 0), 0 0 1px rgb(252, 113, 0), 0 0 1px rgb(252, 113, 0), 0 0 1px rgb(252, 113, 0), 0 0 1px rgb(252, 113, 0), 0 0 1px rgb(252, 113, 0), 0 0 1px rgb(252, 113, 0), 0 0 1px rgb(252, 113, 0), 0 0 1px rgb(252, 113, 0), 0 0 1px rgb(252, 113, 0), 0 0 1px rgb(252, 113, 0), 0 0 1px rgb(252, 113, 0);
+  
+}
+.txtContain > p {
+  font-size: .8em;
+  color: rgb(181, 177, 177);
+  margin-bottom: 0;
+}

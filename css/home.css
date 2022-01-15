@@ -1,0 +1,98 @@
+.srch-button {
+    background-color: #f13a11;
+    border: none;
+    color: white;
+    padding: 9px;
+    padding-bottom: 13px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 35px #FF1010;
+    cursor: pointer;
+}
+
+#site-search {
+    border: none;
+    border-radius: 2em;
+    padding: .5rem;
+    width: 15rem;
+    margin: 1rem;
+}
+#site-search:focus {
+    border-color: white;
+}
+
+.latest {
+    padding: 2em 1em;
+    background-color: #0b1926;
+    margin: .5em 0;
+}
+
+.latest > h3 {
+    color: white;
+    margin: 0 2em;
+}
+.latestGames {
+    display: flex;
+    margin-left: 1px;
+}
+
+newsPiece {
+    transform: translateX(0);
+}
+
+
+
+#latePoster {
+    width: 30vw;
+}
+
+/* .txtContain {
+    top: 1rem;
+} */
+
+.txtContain h3 {
+    width: 6em;
+    text-shadow: 1px 1px 1px black;
+}
+
+
+.feature {
+    display: flex;
+gap: 3rem;
+justify-content: center;
+position: relative;
+}
+
+.feature img {
+    width: 19rem;
+    animation: anim 5s linear infinite;
+}
+
+/* @keyframes anim {
+    0%{transform: translateX(0);}
+    100%{transform: translateX(-160%);}
+    
+} */
+.feature img:hover {
+opacity: .5;
+}
+
+.texts {
+    position: absolute;
+display: flex;
+gap: 16rem;
+color: white;
+top: 9rem;
+}
+
+
+
+.texts a  {
+    color: white;
+    font-family: 'Baloo 2', cursive;  text-shadow: #000 0px 0px 1px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    cursor: pointer;
+}
+
+@media (min-width: 300px) {
+    
+}

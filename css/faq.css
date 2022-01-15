@@ -1,0 +1,41 @@
+.row {
+  justify-content: center;
+}
+
+.title {
+  margin-bottom: 5rem;
+}
+
+.allQuestions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.questions {
+  width: 44%;
+  /* background: white; */
+  /* filter: drop-shadow(0 1px 1px black); */
+  padding: 1em 1.5em;
+  padding-bottom: 1em;
+  padding-bottom: 0;
+  height: fit-content;
+  margin: 1em 0;
+}
+.questions svg {
+    color: rgb(241, 58, 17);
+    font-size: 1.5em;
+    margin: .3em;
+    transform: rotate(-17deg);
+}
+.questions h5 {
+   color: #f13a11;
+}
+.questions > p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  /* truncate to 4 lines */
+  /* -webkit-line-clamp: 2; */
+  font-size: 1em;
+}
