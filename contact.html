@@ -1,0 +1,175 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/tooplate-gymso-style.css">
+    <title>Contact Us</title>
+</head>
+
+<style>
+    .alertgreen {
+        padding: 20px;
+        background-color: #6BBD6E;
+        /* Green */
+        color: white;
+        margin-bottom: 15px;
+        margin-top: 6rem;
+    }
+
+    /* The close button */
+    .closebtn {
+        margin-left: 15px;
+        color: white;
+        font-weight: bold;
+        float: right;
+        font-size: 22px;
+        line-height: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    /* When moving the mouse over the close button */
+    .closebtn:hover {
+        color: black;
+    }
+</style>
+
+<body>
+
+
+
+    <!-- MENU BAR -->
+    
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+          <a href="index.html">
+            <img
+              src="img/Logo.png"
+              alt="Logo"
+              style="width: 3rem; border-radius: 50%; margin-left: -4rem"
+          /></a>
+  
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-lg-auto">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link smoothScroll">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="latestGames.html" class="nav-link smoothScroll"
+                  >Latest Games</a
+                >
+              </li>
+  
+              <li class="nav-item">
+                <a href="gallery.html" class="nav-link smoothScroll">All Games</a>
+              </li>
+              <li class="nav-item review-items">
+                <a href="#" class="nav-link smoothScroll review1">Reviews</a>
+                <div id="dropdown1" style="display: none">
+                  <a href="gbReviews.html">Game-Bench Reviews</a>
+                  <a href="reviews.html">User Reviews</a>
+                </div>
+              </li>
+  
+              <li class="nav-item">
+                <a href="contact.html" class="nav-link smoothScroll">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+   
+    <!-- CONTACT -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="row">
+
+                <div class="ml-auto col-lg-5 col-md-6 col-12">
+                    <h2 class="mb-4 pb-2" data-aos="fade-up" data-aos-delay="200">Feel free to ask anything</h2>
+
+                    <form  method="POST" class="contact-form webform" data-aos="fade-up" data-aos-delay="400" role="form">
+                        <input type="text" class="form-control" name="user_name" placeholder="Name">
+
+                        <input type="email" class="form-control" name="user_email" placeholder="Email">
+
+                        <textarea class="form-control" rows="5" name="user_message" placeholder="Message"></textarea>
+
+                        <button type="submit" class="form-control" id="submit-button" name="submit">Send Message</button>
+                    </form>
+                </div>
+
+                <div class="mx-auto mt-4 mt-lg-0 mt-md-0 col-lg-5 col-md-6 col-12">
+                    <h2 class="mb-4" data-aos="fade-up" data-aos-delay="600">Where you can <span>find us</span></h2>
+
+                    <p data-aos="fade-up" data-aos-delay="800"><i class="fa fa-map-marker mr-1"></i> 120-240 Rio de Janeiro - State of Rio de Janeiro, Brazil</p>
+                    <!-- How to change your own map point
+  1. Go to Google Maps
+  2. Click on your location point
+  3. Click "Share" and choose "Embed map" tab
+  4. Copy only URL and paste it within the src="" field below
+-->
+                    <div class="google-map" data-aos="fade-up" data-aos-delay="900">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3649.461941515549!2d90.3557030144575!3d23.837724991352793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c1410136a4dd%3A0x7a2bb9d68ea2166e!2sMilitary%20Institute%20of%20Science%20and%20Technology%20(MIST)!5e0!3m2!1sen!2sbd!4v1641189524158!5m2!1sen!2sbd" width="1920" height="250" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+</body>
+<script src="JS/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+
+
+        $('#navbarNav').addClass('animate');
+
+        $(".review1").mouseenter(function() {
+        $("#dropdown1").show();
+    })
+
+    $("#dropdown1").on('mouseleave', function() {
+        $("#dropdown1").hide();
+    })
+        $(".closebtn").click(function(){
+            $('.alertgreen').hide();
+            console.log("bhai")
+        })
+    })
+</script>
+
+</html>
