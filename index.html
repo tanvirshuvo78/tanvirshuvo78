@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/news.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+    <title>Game Bench - Heaven for Gamers</title>
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/tooplate-gymso-style.css">
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+
+</head>
+
+<style>
+    #nameError {
+        color: red;
+        font-size: .7rem;
+    }
+
+    #passError {
+        color: red;
+        font-size: .7rem;
+    }
+</style>
+
+<body data-spy="scroll" data-target="#navbarNav" data-offset="50">
+
+    <!-- MENU BAR -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+
+            <a href="index.html"> <img src="img/Logo.png" alt="Logo" style="width:3rem;border-radius:50%;margin-left: -4rem;"></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-lg-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link smoothScroll">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="latestGames.html" class="nav-link smoothScroll">Latest Games</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link smoothScroll">All Games</a>
+                    </li>
+                    <li class="nav-item review-items">
+                        <a href="#" class="nav-link smoothScroll review1">Reviews</a>
+                        <div id="dropdown1" style="display: none;">
+                            <a href="gbReviews.html">Game-Bench Reviews</a>
+                            <a href="reviews.html">User Reviews</a>
+                        </div>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link smoothScroll">Contact</a>
+                    </li>
+                </ul>
+
+
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- HERO -->
+    <section class="hero d-flex flex-column justify-content-center align-items-center" id="home">
+
+        <div class="bg-overlay"></div>
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-8 col-md-10 mx-auto col-12">
+                    <div class="hero-text mt-5 text-center">
+
+                        <h6 data-aos="fade-up" data-aos-delay="300">Get Info on Gaming</h6>
+
+                        <h1 class="text-white" data-aos="fade-up" data-aos-delay="500">Welcome to the place where all you need is all about games</h1>
+
+                        <form method="GET">
+
+                            <input type="search" id="site-search" name="q" aria-label="Search through site content">
+
+                            <button class="srch-button">Search</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <!-- <newsPiece>
+                    <img src="img/fortnite.jpg">
+                    <div class="txtContain">
+                        <p>1 day Ago</p>
+                        <h3>Fortnite Boba Fett Skin Arrives In Celebration Of The Book Of Boba Fett</h3>
+                        <p>by Tanvir</p>
+                    </div>
+
+
+                </newsPiece>
+                <newsPiece>
+                    <img src="img/destiny.jpg">
+                    <div class="txtContain">
+                        <p>1 day Ago</p>
+                        <h3>
+                            Destiny 2 Players Want New Way to Get Seasonal Weapon Ornaments </h3>
+                        <p>by Tanvir</p>
+                    </div>
+
+
+                </newsPiece>
+
+                 <newsPiece>
+                    <img src="img/last.jpg">
+                    <div class="txtContain">
+                        <p>1 day Ago</p>
+                        <h3>It's Snowing in Red Dead Redemption 2 Right Now</p>
+                    </div>
+
+
+                </newsPiece>
+                <newsPiece>
+                    <img src="img/cod2.png">
+                    <div class="txtContain">
+                        <p>1 day Ago</p>
+                        <h3>Call of Duty: Vanguard Players Want To See Trophy Systems Added</h3>
+                        <p>by Tanvir</p>
+                    </div>
+
+
+                </newsPiece>
+     </section> -->
+
+
+        <section class="latest">
+
+            <h3>Latest Games</h3>
+
+            <div class="latestGames">
+                
+                <newsPiece>
+                    <img src="img/fifa22.jpg" id="latePoster">
+                    <a href="fifa22-game.html">
+                        <div class="txtContain">
+                            <h3>Fifa 22 (2021)</h3>
+                            <p>Electronic Arts</p>
+                        </div>
+                    </a>
+                </newsPiece>
+                <newsPiece>
+                    <img src="img/codVanguard.jpg" id="latePoster">
+                    <a href="cod-game.html">
+                        <div class="txtContain">
+                            <h3>Call of Duty - Vanguard (2021)</h3>
+                            <p>Activision</p>
+                        </div>
+                    </a>
+                </newsPiece>
+                <newsPiece>
+                    <img src="img/haloInfinite.jpg" id="latePoster">
+                    <a href="halo-game.html">
+                        <div class="txtContain">
+                            <h3>Halo Infinite (2021)</h3>
+                            <p>Xbox Game Studios</p>
+                        </div>
+                    </a>
+                </newsPiece>
+                <newsPiece>
+                    <img src="img/cyberpunk.jpg" id="latePoster">
+                    <a href="cbpunk-game.html">
+                        <div class="txtContain">
+                            <h3>Cyberpunk 2077 (2021)</h3>
+                            <p>CD Projeckt</p>
+                        </div>
+                    </a>
+                </newsPiece>
+
+
+
+            </div>
+        </section>
+
+
+        <section class="feature" id="feature">
+
+            <img src="img/img1.png" alt="">
+            <img src="img/img2.png" alt="">
+            <img src="img/img3.png" alt="">
+            <div class="texts">
+
+                <h3><a href="about.html">About Us</a></h3>
+                <h3><a href="faq.html">FAQ</a></h3>
+                <h3><a href="news.html">Game News</a></h3>
+            </div>
+        </section>
+        <section class="feature" id="admin-portal">
+
+            <div class="left">
+                <span class="iconify" data-icon="dashicons:admin-network" style="color: white;"> </span>
+                <h2>Admin Portal</h2>
+                <p>*Ignore if you're not an Admin</p>
+            </div>
+
+            <form action="index.php" method="POST" id="myanchor">
+                <h3>Log in</h3>
+                <input type="text" value="" name="name" placeholder="Admin Name" id="aName">
+               
+                <input type="password" value="" name="pass" placeholder="Password">
+            
+                <input type="submit" value="Go" id="submit">
+            </form>
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+
+                    <div class="ml-auto col-lg-4 col-md-5">
+                        <p class="copyright-text">Copyright &copy; 2021 Game Bench.
+
+                    </div>
+
+                    <div class="d-flex justify-content-center mx-auto col-lg-5 col-md-7 col-12">
+                        <p class="mr-4">
+                            <i class="fa fa-envelope-o mr-1"></i>
+                            <a href="#">GameBench@gmail.com</a>
+                        </p>
+
+                        <p><i class="fa fa-phone mr-1"></i> 010-020-0840</p>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+        <!-- Modal -->
+        <div class="modal fade" id="membershipForm" tabindex="-1" role="dialog" aria-labelledby="membershipFormLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+
+                <div class="modal-content">
+                    <div class="modal-header">
+
+                        <h2 class="modal-title" id="membershipFormLabel">Membership Form</h2>
+
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <form class="membership-form webform" role="form">
+                            <input type="text" class="form-control" name="cf-name" placeholder="John Doe">
+
+                            <input type="email" class="form-control" name="cf-email" placeholder="Johndoe@gmail.com">
+
+                            <input type="tel" class="form-control" name="cf-phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+
+                            <textarea class="form-control" rows="3" name="cf-message" placeholder="Additional Message"></textarea>
+
+                            <button type="submit" class="form-control" id="submit-button" name="submit">Submit Button</button>
+
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="signup-agree">
+                                <label class="custom-control-label text-small text-muted" for="signup-agree">I agree to the <a href="#">Terms &amp;Conditions</a>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="modal-footer"></div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- SCRIPTS -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/aos.js"></script>
+        <script src="js/smoothscroll.js"></script>
+        <script src="js/custom.js"></script>
+
+        <script>
+            $(document).ready(function() {
+                $('#navbarNav').addClass('animate');
+
+                $(".review1").mouseenter(function() {
+                $("#dropdown1").show();
+            })
+
+            $("#dropdown1").on('mouseleave', function() {
+                $("#dropdown1").hide();
+            })
+
+
+                function autoSlide() {
+                    let x = $("newsPiece").css("right");
+                    let y = "200px";
+                    var total = parseInt(x, 10) + parseInt(y, 10);
+                    $(".latestGames").css("margin-left", total);
+                    $("newsPiece:first-child").insertAfter("newsPiece:last-child");
+                    $(".latestGames").animate({
+                        marginLeft: '1px'
+                    }, 500);
+                }
+
+                autoSlide();
+                setInterval(function() {
+                    autoSlide();
+                }, 5000);
+
+            })
+        </script>
+
+</body>
+
+</html>
